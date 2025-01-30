@@ -127,7 +127,7 @@ public class nMFrame extends javax.swing.JFrame {
 
     private double newtonRaphson(String function, String functionDerivative, double approx, double tol, int maxIterations) {
         int count = 0;
-        double p = 0.0;
+        double p;
 
         while (count < maxIterations) {
             double fValue = evaluate(function, approx);
